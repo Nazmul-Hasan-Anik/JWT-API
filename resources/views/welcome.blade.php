@@ -23,20 +23,23 @@
     <body>
         <h1 style="text-align: center"> <u> Documentation</u></h1>
         <ol>
-  <li> <b>For Login:</b> Use Postman and put this url: http://127.0.0.1:8000/api/login , then in Header tab , add Content-Type -> application/json & Accept -> application/json . After This , in "Body" tab , click raw and add this line in text box: <br> {
+  <li> <b>For Login:</b> Use Postman and put this url: https://assignment.codeinbizz.com/api/login , then in Header tab , add Content-Type -> application/json & Accept -> application/json . After This , in "Body" tab , click raw and add this line in text box: <br> {
     <br> "email": "anikology@gmail.com",
    <br> "password": "12345"
 <br> }  
 <br>The Type should be in "POST"  method
 </li>
 <br>
-  <li><b>For Employee Name and Salary : </b> After Login , authorize user can check the name and salary of employees. For this , you need to put this url in postman: http://127.0.0.1:8000/api/employee_info , then in Header tab , add Content-Type -> application/json & Accept -> application/json & Authorization: bearer then paste the jwt token which you get after the login 
+  <li><b>For Employee Name and Salary : </b> After Login , authorize user can check the name and salary of employees. For this , you need to put this url in postman: https://assignment.codeinbizz.com/api/employee_info , then in Header tab , add Content-Type -> application/json & Accept -> application/json & Authorization: bearer then paste the jwt token which you get after the login 
 <br>The Type should be in "GET"  method  </li>
 <br>
-  <li><b>For Logout:</b> Use Postman and put this url: http://127.0.0.1:8000/api/logout   </li>
+  <li><b>For Logout:</b> Use Postman and put this url: https://assignment.codeinbizz.com/api/logout   </li>
 <br>
   <li><b>public API for list of few mobile phones with multiple filter:</b>
-  You need to put this url in postman: http://127.0.0.1:8000/api/mobiles , <b>For Filtering,</b> you need to put click "form-data" ,which is in "Body"  tab and add color and storage in "Key" Section and color name and storage amount in value  section such as "Silver" & "128GB" . Then you will get the filter result
+  You need to put this url in postman: https://assignment.codeinbizz.com/api/mobiles , <b>For Filtering,</b> After This , in "Body" tab , click raw and add this line in text box: <br> {
+    <br> "color": "Silver",
+   <br> "storage": "128GB"
+<br> }  . Then you will get the filter result
 <br>The Type should be in "GET"  method
 </li>
 </ol> 
